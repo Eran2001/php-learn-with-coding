@@ -21,18 +21,6 @@
 <h1>
     <?php
 
-    $myArray = [
-            "name" => "John Doe",
-            "age" => 25,
-    ];
-
-    function name($name, $age): string
-    {
-        return "hello, My name is {$name}, and I'm $age years old.";
-    }
-
-    $functionCall = name($myArray['name'], $myArray['age']);
-    echo $functionCall;
 
     ?>
 </h1>
