@@ -21,12 +21,27 @@
 <h1>
     <?php
 
-    function myFunction()
+    $myArray = array("Era", "Mary", "John");
+
+    function myFunction($givenArray, $givenName)
     {
-        // do something
+        foreach ($givenArray as $value) {
+            if ($value === $givenName) {
+                return $value;
+            }
+        }
     }
 
     ?>
+
+    <p>
+        <?php
+
+        $functionCall = myFunction($myArray, "Mary");
+        echo $functionCall;
+
+        ?>
+    </p>
 </h1>
 
 </body>
