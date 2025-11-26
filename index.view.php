@@ -9,7 +9,13 @@
 </head>
 <body>
 
-<h1>Hello</h1>
+<h1><?= $business["name"] ?></h1>
+
+<ul>
+    <?php foreach ($business["item"] as $item) : ?>
+        <li><?= $item; ?></li>
+    <?php endforeach; ?>
+</ul>
 
 </body>
 </html>

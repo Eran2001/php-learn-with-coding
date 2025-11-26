@@ -1,5 +1,8 @@
 <?php
 
-echo "Hello World";
+$business = [
+    "name" => "Tech",
+    "item" => ["1", "2", "3", "4", "5"]
+];
 
-include "index.view.php";
+require "index.view.php";
