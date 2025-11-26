@@ -1,19 +1,10 @@
 <?php
 
-$myArray = array("Era", "Mary", "John");
-$myName = $myArray[array_rand($myArray)];
 
-function myFunction($items, $fn): array
+function myFunction(string $name): string
 {
-    $filteredItems = [];
-    foreach ($items as $item) {
-        if ($fn($item)) {
-            $filteredItems[] = $item;
-        }
-    }
-    return $filteredItems;
+    return "Hello $name";
 }
 
-$fnCall = myFunction($myArray, function ($item) {
-    return $item == "Era";
-});
+$fnCall = myFunction("Era");
+echo $fnCall;
