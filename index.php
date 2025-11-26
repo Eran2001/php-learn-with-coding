@@ -17,5 +17,3 @@ function myFunction($items, $fn): array
 $fnCall = myFunction($myArray, function ($item) {
     return $item == "Era";
 });
-
-print_r($fnCall);
