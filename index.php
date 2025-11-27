@@ -1,8 +1,5 @@
 <?php
 
-$business = [
-    "name" => "Tech",
-    "item" => ["1", "2", "3", "4", "5"]
-];
+$heading = "Home";
 
-require "index.view.php";
+require "views/index.view.php";
