@@ -1,11 +1,7 @@
 <?php
 
-$heading = "About";
+require "uriFunction.php";
 
-// identify the URI
-function reqURI($link): bool
-{
-    return $_SERVER["REQUEST_URI"] === $link;
-}
+$heading = "About";
 
 include "views/about.views.php";
