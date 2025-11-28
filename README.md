@@ -98,3 +98,10 @@ echo $user["name"];
         // do something
     }
 ```
+
+### Data Types
+
+```bash
+ $int_var = 12345; // integer
+ $var1 = 1.55; // float or double
+```
