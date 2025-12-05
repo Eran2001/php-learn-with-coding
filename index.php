@@ -1,13 +1,26 @@
 <?php
+  
+  $heading = 'PHP!';
+  
+  $myArray = ["Hello", "World"];
+  
+  var_dump($myArray);
+  echo "<br />";
+  print_r($myArray);
 
-require "uriFunction.php";
+?>
 
-$uri = $_SERVER["REQUEST_URI"];
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>PHP!</title>
+</head>
 
-if ($uri === "/") {
-    require "controllers/index.php";
-} elseif ($uri === "/about") {
-    require "controllers/about.php";
-} else {
-    require "controllers/contact.php";
-}
+<body>
+
+  <h1>
+    Hello
+  </h1>
+
+</body>
+</html>
