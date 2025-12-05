@@ -151,3 +151,15 @@ This automatic type conversion in PHP is called type juggling.
 
   // use var_dump only for development
 ```
+
+### Superglobal Variables
+
+// These are predefined variables that are always available in all scopes throughout a script, 
+meaning you can access them inside functions or methods without needing to use the global keyword.
+
+```bash
+  $_SERVER
+  $_GET
+  $_POST
+  $_FILES
+```
