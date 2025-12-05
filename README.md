@@ -149,5 +149,5 @@ This automatic type conversion in PHP is called type juggling.
   echo "<br />";
   var_dump($reqURI);
 
-// use var_dump only for development
+  // use var_dump only for development
 ```
