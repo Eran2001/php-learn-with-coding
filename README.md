@@ -141,3 +141,13 @@ This automatic type conversion in PHP is called type juggling.
   // strlen function - strlen()
   // strpos function - strpos() Function
 ```
+
+### Output Methods
+
+```bash
+  $reqURI = $_SERVER['REQUEST_URI'];
+  echo "<br />";
+  var_dump($reqURI);
+
+// use var_dump only for development
+```
