@@ -336,3 +336,23 @@ It focuses on creating reusable, modular, and maintainable code.
       }
   }
 ```
+
+// Interface - only method declarations (no body). Classes must implement all methods. Used for multiple inheritance (because PHP does NOT support multiple class inheritance).
+
+```bash
+  interface PaymentGateway {
+      public function pay($amount);
+  }
+
+  class PayPal implements PaymentGateway {
+      public function pay($amount) {
+          echo "Paying $amount via PayPal";
+      }
+  }
+
+  class Stripe implements PaymentGateway {
+      public function pay($amount) {
+          echo "Paying $amount via Stripe";
+      }
+  }
+```
