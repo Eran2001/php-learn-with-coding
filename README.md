@@ -255,6 +255,15 @@ It focuses on creating reusable, modular, and maintainable code.
     echo $car->show();
 ```
 
+// Access Modifiers - Used to control who can access class properties/methods.
+
+```bash
+Modifier  |	 Access From Class  |  Access From Child Class  |  Access From Outside
+public	          ✔ Yes	                    ✔ Yes	                  ✔ Yes
+protected	      ✔ Yes	                    ✔ Yes	                  ❌ No
+private	          ✔ Yes	                    ❌ No	                  ❌ No
+```
+
 // Encapsulation - Encapsulation = hiding data and controlling access using getters/setters.
 
 ```bash
