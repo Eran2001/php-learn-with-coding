@@ -231,8 +231,6 @@ It focuses on creating reusable, modular, and maintainable code.
 
 #### Classes and Objects:
 
-// Encapsulation, Inheritance, Polymorphism, Abstraction
-
 ```bash
   <?php
   
@@ -255,4 +253,24 @@ It focuses on creating reusable, modular, and maintainable code.
   
     $car = new Vehicle("Toyota", "red");
     echo $car->show();
+```
+
+// Encapsulation - Encapsulation = hiding data and controlling access using getters/setters.
+
+```bash
+  class User {
+      private $name; // cannot access directly from outside
+
+      public function setName($name) {
+          $this->name = $name; // controlled way to set value
+      }
+
+      public function getName() {
+          return $this->name; // controlled way to get value
+      }
+  }
+
+  $user = new User();
+  $user->setName("Eran");
+  echo $user->getName(); // Output: Eran
 ```
