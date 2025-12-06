@@ -323,3 +323,16 @@ It focuses on creating reusable, modular, and maintainable code.
   playSound(new Dog()); // Woof!
   playSound(new Cat()); // Meow!
 ```
+
+// Abstraction - a class that cannot be instantiated, only used for structure. Used when you want a common template but with different implementation.
+```bash
+  abstract class Shape {
+      abstract public function area();  // no body
+  }
+
+  class Circle extends Shape {
+      public function area() {
+          return 3.14 * 5 * 5; // example
+      }
+  }
+```
